@@ -142,13 +142,13 @@
         </div>
 
         <!-- контейнер популярные товары -->
-        <section class="popular-items-container">
+        <section class="popular-items">
           <div class="container">
-            <header class="items-header">
-              <h2 class="items-title"> Популярные товары:</h2>
+            <header class="popular-header">
+              <h2 class="popular-title"> Популярные товары:</h2>
               <a href="#">Все популярные товары</a>
             </header>
-            <div class="catalog-items">
+            <div class="popular-items">
               <article class="item">
                 <div class="image">
                   <img width="220" height="160" src="#" alt="фото товара #1">
@@ -174,7 +174,7 @@
                   <img width="220" height="160" src="#" alt="фото товара #3">
                 </div>
                 <div class="title">
-                  <a href="#">Перфоратор BOSCH< BGF 6000</a>
+                  <a href="#">Перфоратор BOSCH BGF 6000</a>
                 </div>
                 <div class="price price-old">30500 Р.</div>
                 <div class="price price-new">25500 Р.</div>
@@ -193,7 +193,7 @@
         </section>
 
         <!-- контейнер популярные производители -->
-        <section class="popular-manufacturers-container">
+        <section class="popular-manufacturers">
           <header class="manufacturers-header">
             <h2 class="manufacturers-title">Популярные производители:</h2>
             <a href="#">Все производители</a>
@@ -234,42 +234,42 @@
                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <!-- сервисы сделаны через табы -->
-          <div class="services-capabilities-tabs">
-            <!-- кнопки табов -->
-            <ul class="tabs-controls">
-              <li class="tabs-control-item active">
-                <a class="tabs-control-link" href="#">Доставка</a>
-              </li>
-              <li class="tabs-control-item">
-                <a class="tabs-control-link" href="#">Гарантия</a>
-              </li>
-              <li class="tabs-control-item">
-                <a class="tabs-control-link" href="#">Кредит</a>
-              </li>
-            </ul>
-            <!-- список табов -->
-            <ul class="tabs-list">
-              <li class="tabs-list-item">
-                <h2 class="services-delivery-title">Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо<br>
-                   к вашему подъезду совершенно бесплатно!<br>
-                   Ведь мы неплохо заработаем,<br>
-                   поднимая его на ваш на этаж!
-                </p>
-                <img src="#" width="250" height="200" alt="фото сервиса">
-              </li>
-              <li class="tabs-list-item">
-                <h2 class="services-delivery-title">Гарантия</h2>
-                <p>Описание сервиса "Гарантия"</p>
-                <img src="#" width="250" height="200" alt="фото гарантия">
-              </li>
-              <li class="tabs-list-item">
-                <h2 class="services-delivery-title">Кредит</h2>
-                <p>Описание сервиса "Кредит"</p>
-                <img src="#" width="250" height="200" alt="фото кредит">
-              </li>
-            </ul>
+          <div class="services-tabs">
+            <dl class="tabs">
+              <!-- первый таб -->
+              <dt class="tab-selected">Доставка</dt>
+              <dd class="tab-selected">
+                <div class="tab-content">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо<br>
+                     к вашему подъезду совершенно бесплатно!<br>
+                     Ведь мы неплохо заработаем,<br>
+                     поднимая его на ваш на этаж!
+                  </p>
+                  <img src="#" width="250" height="200" alt="фото сервиса">
+                </div>
+              </dd>
+              <!-- второй таб -->
+              <dt>Гарантия</dt>
+              <dd>
+                <div class="tab-content">
+                  <h3>Гарантия</h3>
+                  <p>Описание сервиса "Гарантия"</p>
+                  <img src="#" width="250" height="200" alt="фото гарантия">
+                </div>
+              </dd>
+              <!-- третий таб -->
+              <dt>Кредит</dt>
+              <dd>
+                <div class="tab-content">
+                  <h3>Гарантия</h3>
+                  <p>Описание сервиса "Гарантия"</p>
+                  <img src="#" width="250" height="200" alt="фото гарантия">
+                </div>
+              </dd>
+            </dl>
           </div>
+            <!-- конец -->
         </section>
         <!-- контейнер о компании -->
         <section class="about">

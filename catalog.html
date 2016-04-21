@@ -90,69 +90,74 @@
       <h1 class="page-logo">Перфораторы</h1>
           <!-- фильтры -->
       <section class="filters">
-        <h2 class="filter-logo">Фильтр:</h2>
-        <div class="filter-price">
+        <p class="filter-logo">Фильтр:</p>
+        <form action="#" method="post">
+          <div class="filter-price">
             <!-- фильтр по цене -->
-          <h2 class="filter-price-logo">Цена:</h2>
+            <p class="filter-price-logo">Цена:</p>
             <div class="range-filter">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-              <input class="min-price" type="text" value="0"> -
-              <input class="max-price" type="text" value="30 000">
+              <div class="price-controls">
+                <fieldset>
+                  <input class="min-price" type="text" value="0"> -
+                  <input class="max-price" type="text" value="30 000">
+                </fieldset>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="filter-maker">
-          <!-- фильтр по производителям -->
-          <h2 class="filter-maker-logo">Производители:</h2>
-            <form action="#" method="post">
-            <label for="maker-one-field">
-              <input type="checkbox" name="maker-one" id="maker-one-field" checked>
-                Bosch
-            </label>
-            <label>
-              <input type="checkbox" name="maker-two" id="maker-two-field" >
-                Интерскол
-            </label>
-            <label>
-              <input type="checkbox" name="maker-three" id="maker-three-field" checked>
-                Makita
-            </label>
-            <label>
-              <input type="checkbox" name="maker-four" id="maker-four-field">
-                Dewalt
-            </label>
-            <label>
-              <input type="checkbox" name="maker-five" id="maker-five-field">
-                Hitachi
-            </label>
-          </form>
-
-        </div>
+          <div class="filter-maker">
+            <!-- фильтр по производителям -->
+            <fieldset>
+              <legend class="filter-maker-title">Производители</legend>
+              <label for="maker-one-field">
+                <input type="checkbox" name="maker-one" id="maker-one-field" checked>
+                  Bosch
+              </label>
+              <label for="maker-two-field">
+                <input type="checkbox" name="maker-two" id="maker-two-field">
+                  Интерскол
+              </label>
+              <label for="maker-three-field">
+                <input type="checkbox" name="maker-three" id="maker-three-field" checked>
+                  Makita
+              </label>
+              <label for="maker-four-field">
+                <input type="checkbox" name="maker-four" id="maker-four-field">
+                  Dewalt
+              </label>
+              <label for="maker-five-field">
+                <input type="checkbox" name="maker-five" id="maker-five-field">
+                  Hitachi
+              </label>
+            </form>
+            </fieldset>
+          </div>
           <div class="filter-power">
-          <h2 class="filter-power-logo">Питание:</h2>
-          <form action="#" method="post">
-              <label>
+            <!-- фильтр по мощности -->
+            <fieldset>
+              <legend class="filter-power-title">Питание</legend>
+              <label id="power-one-field">
                 <input type="radio" name="group-one" id="power-one-field" checked>
-                    Аккумуляторные
+                  Аккумуляторные
               </label>
-              <label>
+              <label id="power-two-field">
                 <input type="radio" name="group-two" id="power-two-field">
-                    Сетевые
+                  Сетевые
               </label>
-          </form>
-        </div>
-        <a class="btn" href="#">Показать</a>
+            </fieldset>
+          </div>
+          <input type="submit" value="Показать" >
+        </form>
       </section>
 
       <section class="sorting">
-        сортировка
+        <!-- блок сортировка -->
         <div class="sort">
           <h2 class="sort-logo">Сортировка:</h2>
           <ul class="sort-filter">
@@ -263,21 +268,22 @@
         </div>
       </section>
 
-        <ul class="pages">
+      <ul class="pages">
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">Следующая</a></li>
       </ul>
-        <div class="info-item">
-          <h2 class="info-title">Пара слов о перфораторах</h2>
-          <p class="info-discription">
+      <!-- блок о товаре -->
+      <div class="info-item">
+        <h2 class="info-title">Пара слов о перфораторах</h2>
+        <p class="info-discription">
             Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления
             отверстий в кирпиче, бетоне и камне.<br>Существует электромеханические и пневматические
             перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного
             молотка. В<br>ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут
             совмещены отбойный молоток и ударная дрель.
-          </p>
+        </p>
       </div>
     </div>
     <!-- end-container -->
