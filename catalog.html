@@ -80,7 +80,7 @@
   <main class="page-content">
     <!-- begin-container -->
     <div class="container">
-        <div class="breadcrumbs">
+      <div class="breadcrumbs">
         <ul>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
@@ -90,85 +90,91 @@
       <h1 class="page-logo">Перфораторы</h1>
           <!-- фильтры -->
       <section class="filters">
-        <p class="filter-logo">Фильтр:</p>
         <form action="#" method="post">
-          <div class="filter-price">
-            <!-- фильтр по цене -->
-            <p class="filter-price-logo">Цена:</p>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+          <fieldset>
+            <legend class="filter-logo">Фильтр:</legend>
+            <div class="filter-price">
+              <!-- фильтр по цене -->
+              <p class="filter-price-logo">Цена:</p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
                 </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-              </div>
-              <div class="price-controls">
-                <fieldset>
-                  <input class="min-price" type="text" value="0"> -
-                  <input class="max-price" type="text" value="30 000">
-                </fieldset>
+                <div class="price-controls">
+                  <fieldset>
+                    <input class="min-price" type="text" value="0"> -
+                    <input class="max-price" type="text" value="30 000">
+                  </fieldset>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="filter-maker">
-            <!-- фильтр по производителям -->
-            <fieldset>
-              <legend class="filter-maker-title">Производители</legend>
-              <label for="maker-one-field">
-                <input type="checkbox" name="maker-one" id="maker-one-field" checked>
-                  Bosch
-              </label>
-              <label for="maker-two-field">
-                <input type="checkbox" name="maker-two" id="maker-two-field">
-                  Интерскол
-              </label>
-              <label for="maker-three-field">
-                <input type="checkbox" name="maker-three" id="maker-three-field" checked>
-                  Makita
-              </label>
-              <label for="maker-four-field">
-                <input type="checkbox" name="maker-four" id="maker-four-field">
-                  Dewalt
-              </label>
-              <label for="maker-five-field">
-                <input type="checkbox" name="maker-five" id="maker-five-field">
-                  Hitachi
-              </label>
-            </form>
-            </fieldset>
-          </div>
-          <div class="filter-power">
-            <!-- фильтр по мощности -->
-            <fieldset>
-              <legend class="filter-power-title">Питание</legend>
-              <label id="power-one-field">
-                <input type="radio" name="group-one" id="power-one-field" checked>
-                  Аккумуляторные
-              </label>
-              <label id="power-two-field">
-                <input type="radio" name="group-two" id="power-two-field">
-                  Сетевые
-              </label>
-            </fieldset>
-          </div>
-          <input type="submit" value="Показать" >
+            <div class="filter-maker">
+              <!-- фильтр по производителям -->
+              <fieldset>
+                <legend class="filter-maker-title">Производители</legend>
+                <label for="maker-one-field">
+                  <input type="checkbox" name="maker-one" id="maker-one-field" checked>
+                    Bosch
+                </label>
+                <label for="maker-two-field">
+                  <input type="checkbox" name="maker-two" id="maker-two-field">
+                    Интерскол
+                </label>
+                <label for="maker-three-field">
+                  <input type="checkbox" name="maker-three" id="maker-three-field" checked>
+                    Makita
+                </label>
+                <label for="maker-four-field">
+                  <input type="checkbox" name="maker-four" id="maker-four-field">
+                    Dewalt
+                </label>
+                <label for="maker-five-field">
+                  <input type="checkbox" name="maker-five" id="maker-five-field">
+                    Hitachi
+                </label>
+              </fieldset>
+            </div>
+            <div class="filter-power">
+              <!-- фильтр по мощности -->
+              <fieldset>
+                <legend class="filter-power-title">Питание</legend>
+                <label id="power-one-field">
+                  <input type="radio" name="group-one" id="power-first-field" checked>
+                    Аккумуляторные
+                </label>
+                <label id="power-two-field">
+                  <input type="radio" name="group-two" id="power-second-field">
+                    Сетевые
+                </label>
+              </fieldset>
+            </div>
+            <button class="btn" type="submit" value="Показать"></button>
+          </fieldset>
         </form>
       </section>
 
       <section class="sorting">
         <!-- блок сортировка -->
         <div class="sort">
-          <h2 class="sort-logo">Сортировка:</h2>
+          <p class="sort-logo">Сортировка:</p>
           <ul class="sort-filter">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По функционалу</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
           </ul>
+          <div class="sort-top">
+            <a href="#"></a>
+          </div>
+          <div class="sort-bottom">
+            <a href="#"></a>
+          </div>
         </div>
-          <div class="catalog-items">
-
-            <article class="item">
+        <div class="catalog-items">
+          <article class="item">
             <div class="image">
               <img src="/assets/ifmo/product.jpg" width="218" height="168" alt="фото товара">
             </div>
@@ -178,7 +184,7 @@
             <div class="price price-old">22500 Р.</div>
             <div class="price price-new">15500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <div class="image">
               <img src="/assets/ifmo/product.jpg" width="218" height="168" alt="фото товара">
             </div>
@@ -188,7 +194,7 @@
             <div class="price price-old">30500 Р.</div>
             <div class="price price-new">23500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <!-- флаг новика\ купить\ в закладки\ -->
             <div class="flag flag-new">новинка</div>
             <div class="actions">
@@ -203,7 +209,7 @@
             </div>
             <div class="price">12500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <div class="image">
               <img src="/assets/ifmo/product.jpg" width="218" height="168" alt="фото товара">
             </div>
@@ -213,7 +219,7 @@
             <div class="price price-old">22500 Р.</div>
             <div class="price price-new">15500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <!-- флаг новинка \ -->
             <div class="flag flag-new">новинка</div>
             <div class="image">
@@ -225,7 +231,7 @@
             <div class="price price-old">30500 Р.</div>
             <div class="price price-new">23500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <div class="image">
               <img src="/assets/ifmo/product.jpg" width="218" height="168" alt="фото товара">
             </div>
@@ -234,7 +240,7 @@
             </div>
             <div class="price">12500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <!-- флаг новинка \ -->
             <div class="flag flag-new">новинка</div>
             <div class="image">
@@ -246,7 +252,7 @@
             <div class="price price-old">22500 Р.</div>
             <div class="price price-new">15500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <div class="image">
               <img src="/assets/ifmo/product.jpg" width="218" height="168" alt="фото товара">
             </div>
@@ -256,7 +262,7 @@
             <div class="price price-old">30500 Р.</div>
             <div class="price price-new">25500 Р.</div>
           </article>
-            <article class="item">
+          <article class="item">
             <div class="image">
               <img src="/assets/ifmo/product.jpg" width="218" height="168" alt="фото товара">
             </div>
@@ -342,3 +348,6 @@
   </footer>
 </body>
 </html>
+
+
+<!-- плагин PixelPerfect для проверки соответствия размеров в коде и на макете -->
