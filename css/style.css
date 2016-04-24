@@ -1,0 +1,40 @@
+body {
+  min-width: 960px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: #828b8f;
+}
+h1 a{
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  font-family: "Cuprum Italic", "Arial", sans-serif;
+  color: #ee3643;
+}
+.main-header-logo span{
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main-navigation a{
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.footer-logo{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}

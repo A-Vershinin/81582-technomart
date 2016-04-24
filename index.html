@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт - главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- begin-container -->
@@ -115,23 +116,23 @@
               <a href="#" class="slider-next">Назад</a>
               <!-- слайд #1 -->
               <div class="slide">
-                <div class="slade-image">
-                  <img width="450" height="200" src="item-1-small.jpg" alt="картинка слайдера №1">
-                </div>
                 <div class="slide-discription">
                   <h3 class="title">Перфораторы</h3>
                   <p class="discription">Настоящие мужские игрушки</p>
+                </div>
+                <div class="slade-image">
+                  <img src="img/photo-1-small.jpg" width="620" height="266" alt="картинка слайдера №1">
                 </div>
                 <a href="#">Открыть каталог</a>
               </div>
               <!-- слайд #2 -->
               <div class="slide">
-                  <div class="slade-image">
-                    <img width="450" height="200" src="item-2-small.jpg" alt="картинка слайдера №2">
-                  </div>
                   <div class="slide-discription">
                     <h3 class="title">Дрели</h3>
                     <p class="discription">Соседям на радость!</p>
+                  </div>
+                  <div class="slade-image">
+                    <img src="img/photo-2-small.jpg" width="620" height="266" alt="картинка слайдера №2">
                   </div>
                 <a href="#">Открыть каталог</a>
               </div>
@@ -151,7 +152,7 @@
             <div class="popular-items">
               <article class="item">
                 <div class="image">
-                  <img width="220" height="160" src="#" alt="фото товара #1">
+                  <img width="184" height="164" src="img/popular-item-1.jpg" alt="фото товара #1">
                 </div>
                 <div class="title">
                   <a href="#">Перфоратор BOSCH BGF 9000</a>
@@ -161,7 +162,7 @@
               </article>
               <article class="item">
                 <div class="image">
-                  <img width="220" height="160" src="#" alt="фото товара #2">
+                  <img width="127" height="112" src="img/popular-item-2.jpg" alt="фото товара #2">
                 </div>
                 <div class="title">
                   <a href="#">Перфоратор BOSCH BGF 3000</a>
@@ -171,7 +172,7 @@
               </article>
               <article class="item">
                 <div class="image">
-                  <img width="220" height="160" src="#" alt="фото товара #3">
+                  <img width="144" height="128" src="img/popular-item-3.jpg" alt="фото товара #3">
                 </div>
                 <div class="title">
                   <a href="#">Перфоратор BOSCH BGF 6000</a>
@@ -181,7 +182,7 @@
               </article>
               <article class="item item-new">
                 <div class="image">
-                  <img width="220" height="160" src="#" alt="фото товара #4">
+                  <img width="127" height="112" src="img/popular-item-4.jpg" alt="фото товара #4">
                 </div>
                 <div class="title">
                   <a href="#">Перфоратор BOSCH BGF 2000</a>
@@ -200,28 +201,28 @@
           </header>
           <div class="catalog-manufacturers">
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #1">
+                <img width="126" height="37" src="img/bosch.jpg" alt="производитель #1">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #2">
+                <img width="123" height="40" src="img/makita.jpg" alt="производитель #2">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #3">
+                <img width="146" height="44" src="img/dewalt.jpg" alt="производитель #3">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #4">
+                <img width="200" height="88" src="img/interskol.jpg" alt="производитель #4">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #5">
+                <img width="169" height="31" src="img/hitachi.jpg" alt="производитель #5">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #6">
+                <img width="121" height="73" src="img/lg.jpg" alt="производитель #6">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #7">
+                <img width="151" height="96" src="img/aeg.jpg" alt="производитель #7">
             </div>
             <div class="manufacturer">
-                <img width="220" height="160" src="#" alt="производитель #8">
+                <img width="204" height="69" src="img/metabo.jpg" alt="производитель #8">
             </div>
           </div>
         </section>
@@ -246,7 +247,7 @@
                      Ведь мы неплохо заработаем,<br>
                      поднимая его на ваш на этаж!
                   </p>
-                  <img src="#" width="250" height="200" alt="фото сервиса">
+                  <img src="img/delivery.png" width="468" height="261" alt="фото доставка">
                 </div>
               </dd>
               <!-- второй таб -->
@@ -254,8 +255,13 @@
               <dd>
                 <div class="tab-content">
                   <h3>Гарантия</h3>
-                  <p>Описание сервиса "Гарантия"</p>
-                  <img src="#" width="250" height="200" alt="фото гарантия">
+                  <p>Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием,<br>
+                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                    сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                  <img src="img/guarantee.png" width="389" height="283" alt="фото гарантия">
                 </div>
               </dd>
               <!-- третий таб -->
@@ -263,8 +269,11 @@
               <dd>
                 <div class="tab-content">
                   <h3>Гарантия</h3>
-                  <p>Описание сервиса "Гарантия"</p>
-                  <img src="#" width="250" height="200" alt="фото гарантия">
+                  <p>Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <a href="#">Отправить заявку</a>
+                  <img src="img/credit.png" width="465" height="285" alt="фото кредит">
                 </div>
               </dd>
             </dl>
@@ -286,13 +295,15 @@
                   <li>Автотрейдинг</li>
                   <li>ЖелДорЭкспидиция</li>
                 </ul>
+                <a href="#">Подробнее о компонии</a>
             </div>
             <div class="contacs">
               <h2>Контакты</h2>
               <p>Вы можете забрать товар сами,<br>
                  заехав в наш офис:
               </p>
-              <img src="#" alt="офис на карте города">
+              <img src="img/map-office.jpg" width="300" height="158" alt="офис на карте города">
+              <a href="#">Заблудились? Напишите нам!</a>
             </div>
           </div>
         </section>
