@@ -5,12 +5,12 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #ffffff;
 
   background: #828b8f;
 }
-h1 a{
+/*h1 a{
   font-size: 16px;
   line-height: 23px;
   font-weight: bold;
@@ -37,4 +37,957 @@ h1 a{
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}*/
+/*=========================================
+ Вспомогательное оформление для сетки
+ не изменять|begin|
+===========================================*/
+body {
+  padding: 3px;
 }
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > *{
+  position: relative;
+}
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+body > * > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+body > * > * > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+body > *::before {
+  color: white;
+  background: green;
+}
+body > * > *  {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+body > * > *::before {
+  color: white;
+  background: rgb(255, 45, 82);
+}
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
+body > * > * > *::before {
+  color: black;
+  background: rgb(234, 255, 45);
+}
+body > * > * > * > * {
+  background: rgba(45, 255, 243, 0.2);
+  box-shadow: inset 0 0 0 3px rgb(49, 156, 255);
+}
+body > * > * > * > *::before {
+  color: white;
+  background: rgb(49, 156, 255);
+}
+body > * > * > * > * > * {
+  background: rgba(104, 45, 255, 0.2);
+  box-shadow: inset 0 0 0 3px rgb(104, 45, 255);
+}
+body > * > * > * > * > * > *::before {
+  color: white;
+  background: rgb(125, 104, 252);
+}
+.main-header::before {
+  content: ".main-header";
+}
+.top-line::before {
+  content: ".top-line";
+  left: auto;
+  right: 0;
+  top: 28px;
+}
+.middle-line::before {
+  content: ".mmiddle-line";
+  left: auto;
+  right: 0;
+  top: 128px;
+}
+.bottom-line::before {
+  content: ".bottom-line";
+  left: auto;
+  right: 0;
+  top: 120px;
+}
+.container::before {
+  content: ".container";
+}
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+.header-logo::before {
+  content: ".header-logo";
+  left: auto;
+  right: 0;
+}
+.header-seach::before {
+  content: ".header-seach";
+  left: auto;
+  right: 0;
+}
+.header-statistics::before {
+  content: ".header-statistics";
+  left: auto;
+  right: 0;
+}
+.shop-name::before {
+  content: ".shop-name";
+  left: auto;
+  right: 0;
+}
+.header-contacts::before {
+  content: ".header-contacts";
+  left: auto;
+  right: 0;
+}
+.user-block::before {
+  content: ".user-block";
+  left: auto;
+  right: 0;
+}
+.main-navigation::before {
+  content: ".main-navigation";
+}
+.page-content::before {
+  content: ".page-content";
+}
+.groups::before {
+  content: ".groups";
+  left: auto;
+  right: 0;
+}
+.group-materials::before {
+  content: ".group-materials";
+  left: auto;
+  right: 0;
+}
+.group-tool::before {
+  content: ".group-tool";
+  left: auto;
+  right: 0;
+}
+.group-technics::before {
+  content: ".group-technics";
+  left: auto;
+  right: 0;
+}
+.group-discounts::before {
+  content: ".group-discounts";
+  left: auto;
+  right: 0;
+}
+.group-delivery::before {
+  content: ".group-delivery";
+  left: auto;
+  right: 0;
+}
+.group-slider::before {
+  content: ".group-slider";
+  left: auto;
+  right: 0;
+}
+.popular-items::before {
+  content: ".popular-items";
+  left: auto;
+  right: 0;
+}
+.popular-manufacturers::before {
+  content: ".popular-manufacturers";
+  left: auto;
+  right: 0;
+}
+.manufacturers-header::before {
+  content: ".manufacturers-header";
+  left: auto;
+  right: 0;
+  top: 60px;
+}
+.catalog-manufacturers::before {
+  content: ".catalog-manufacturers";
+  left: auto;
+  right: 0;
+  top: 370px;
+}
+.manufacturers-up::before {
+  content: ".manufacturers-up";
+  left: auto;
+  right: 0;
+  top: 120px;
+}.manufacturers-bottom::before {
+  content: ".manufacturers-bottom";
+  left: auto;
+  right: 0;
+  top: 120px;
+}
+.services::before {
+  content: ".services";
+  left: 0;
+  right: auto;
+}
+.services-header::before {
+  content: ".services-header";
+  left: auto;
+  right: 0;
+}
+.services-header-title::before {
+  content: ".services-header-title";
+  left: auto;
+  right: 0;
+  top: 20px;
+}
+.services-header p::before {
+  content: ".services-header";
+  left: auto;
+  right: 0;
+}
+.services-tabs::before {
+  content: ".services-tabs";
+  left: auto;
+  right: 0;
+}
+.about::before {
+  content: ".about";
+  left: auto;
+  right: 0;
+}
+.about-company::before {
+  content: ".about-company";
+  left: auto;
+  right: 0;
+}
+.about-contacs::before {
+  content: ".about-contacs";
+  left: auto;
+  right: 0;
+}
+.main-footer::before {
+  content: ".main-footer";
+}
+.footer-up::before {
+  content: ".footer-up";
+  left: auto;
+  right: 0;
+}
+.footer-left::before {
+  content: ".footer-left";
+  left: auto;
+  right: 0;
+  top: 115px;
+}
+.footer-right::before {
+  content: ".footer-right";
+  left: auto;
+  right: 0;
+  top: 170px;
+}
+.footer-bottom::before {
+  content: ".footer-bottom";
+  left: auto;
+  right: 0;
+}
+.breadcrumbs::before {
+  content: ".breadcrumbs";
+  left: auto;
+  right: 0;
+}
+.page-logo::before {
+  content: ".page-logo";
+  left: auto;
+  right: 0;
+}
+.filters::before {
+  content: ".filters";
+  left: auto;
+  right: 0;
+}
+.sorting::before {
+  content: ".sorting";
+  left: auto;
+  right: 0;
+}
+.pages::before {
+  content: ".pages";
+  left: auto;
+  right: 0;
+}
+.info-item::before {
+  content: ".info-item";
+  left: auto;
+  right: 0;
+}
+/*======================================
+ Вспомогательное оформление для сетки
+ не изменять|end|
+=======================================*/
+body {
+  background: #828b8f url("img/barbershop-index-grid.jpg") no-repeat 50% 3px;
+  background-size: 1122px auto;
+  font-size: 12px;
+}
+h1 {
+  font-size: 12px;
+}
+/* сетка index.html begin
+/*==============================*/
+.top-line {
+  background-color: #000000;
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+.middle-line {
+  /*width: 940px;*/
+  /* Только для оформления сетки */
+  min-height: 158px;
+}
+.bottom-line {
+  /*width: 940px;*/
+  /* Только для оформления сетки */
+  min-height: 60px;
+}
+.main-header {
+  /*margin-bottom: 60px;*/
+  /* Только для оформления сетки */
+  min-height: 320px;
+}
+.header-logo {
+  min-width: 220px;
+  /*padding: 0 10px;*/
+  margin-right: 10px;
+  float: left;
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+.header-seach {
+  min-width: 240px;
+  float: left;
+  margin-right: 10px;
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+.header-statistics {
+  min-width: 460px;
+  float: right;
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+.clearfix::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.statistic-bookmartes {
+  float: left;
+  min-width: 140px;
+  margin-right: 20px;
+}
+.statistic-basket {
+  float: left;
+  min-width: 140px;
+  margin-right: 10px;
+}
+.statistic-order {
+  float: right;
+  min-width: 150px;
+}
+.middle-line {
+  /* Только для оформления сетки */
+  min-height: 158px;
+}
+.shop-name {
+  min-width: 300px;
+  float: left;
+  margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+.header-contacts {
+  min-width: 290px;
+  float: left;
+  margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+.user-block {
+  min-width: 300px;
+  float: right;
+  /* Только для оформления сетки */
+  min-height: 70;
+}
+.bottom-line {
+  /* Только для оформления сетки */
+  min-height: 120px;
+}
+.main-navigation {
+  height: 60px;
+  /* Только для оформления сетки */
+  /*min-height: 40px;*/
+}
+.page-content {
+  min-width: 940px;
+  /* Только для оформления сетки */
+  min-height: 500px;
+}
+.groups {
+  margin-bottom: 53px;
+  /* Только для оформления сетки */
+  min-height: 410px;
+}
+.groups-top {
+  /* Только для оформления сетки */
+  min-height: 123px;
+}
+.group-materials,
+.group-tool,
+.group-technics {
+  float: left;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.group-technics {
+  margin-right: 0px;
+}
+.group-slider {
+  float: left;
+  width: 620px;
+  height: 266px;
+  margin-right: 20px;
+}
+.group-discounts,
+.group-delivery {
+  float: right;
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+}
+.group-delivery {
+  margin-bottom: 0px;
+}
+.group-materials h3,
+.group-tool h3,
+.group-technics h3,
+.group-discounts h3,
+.group-delivery h3{
+  width: 166px;
+  height: 26px;
+  margin-top: 24px;
+  margin-bottom: 13px;
+  padding-left: 24px;
+}
+.group-materials p,
+.group-tool p,
+.group-technics p,
+.group-discounts p,
+.group-delivery p{
+  width: 135px;
+  height: 38px;
+  padding-left: 2px;
+  margin-bottom: 22px;
+  padding-left: 24px;
+}
+/*.slider-slides a {
+  padding-left: 24px;
+}*/
+.popular-items {
+  margin-bottom: 40px;
+  /* Только для оформления сетки */
+  min-height: 316px;
+}
+.popular-items .item {
+  float: left;
+  width: 218px;
+  min-height: 316px;
+  margin-right: 20px;
+  border: 1px solid #e5e5e5;
+}
+.item:last-child {
+  margin-right: 0;
+}
+.item .image {
+  width: 184px;
+  height: 164px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  /*text-align: center;*/
+  /*margin-bottom: 18px;*/
+}
+.item .title {
+  /*width: 158px;
+  height: 36px;*/
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 14px;
+}
+.item .price {
+  width: 100px;
+  height: 14px;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.item .price:first-child {
+  margin-bottom: 70px;
+}
+.item .price-old,
+.item .price-new {
+  width: 140px;
+  height: 38px;
+}
+.item .price-old {
+  text-decoration: line-through;
+}
+.popular-manufacturers {
+  margin-bottom: 85px;
+  /* Только для оформления сетки */
+  min-height: 420px;
+}
+.manufacturers-header,
+.popular-header {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+  padding-right: 24px;
+  margin-bottom: 20px;
+}
+.popular-title,
+.manufacturers-title {
+  float: left;
+  width: 460px;
+  line-height: 38px;
+  margin: 0;
+  /*margin-top: 33px;
+  margin-bottom: 35px;
+  margin-left: 26px;*/
+}
+.popular-header a,
+.manufacturers-header a {
+  float: right;
+  width: 252px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #ee3643;
+}
+.catalog-manufacturers {
+  /* Только для оформления сетки */
+  min-height: 394px;
+}
+.manufacturers-row {
+  margin-bottom: 20px;
+  /* Только для оформления сетки */
+  /*min-height: 143px;*/
+  font-size: 0;
+  vertical-align: middle;
+}
+.manufacturers-bottom {
+  /* Только для оформления сетки */
+  min-height: 143px;
+}
+.manufacturer {
+  display: inline-block;
+  /*float: left;*/
+  width: 218px;
+  height: 143px;
+  margin-right: 20px;
+  font-size: 16px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 143px;
+  border: 1px solid #e5e5e5;
+}
+/*.manufacturers-row .manufacturer:first-child{
+  margin-right: 0;
+}*/
+.manufacturers-row .manufacturer:last-child {
+  margin-right: 0;
+}
+.manufacturer img {
+  /*центровка картинок*/
+  text-align: center;
+  vertical-align: middle;
+}
+.services {
+  /* Только для оформления сетки */
+  min-height: 522px;
+}
+.services-header {
+  /* Только для оформления сетки */
+  min-height: 238px;
+}
+.services-header-title {
+  width: 300px;
+  margin-top: 66px;
+  margin-bottom: 34px;
+  /* Только для оформления сетки */
+  min-height: 30px;
+}
+.services-header p {
+  width: 460px;
+  /* Только для оформления сетки */
+  min-height: 40px;
+}
+.services-tabs {
+  /* Только для оформления сетки */
+  /*min-height: 40px;*/
+  min-height: 260px;
+}
+.about {
+  /* Только для оформления сетки */
+  min-height: 524px;
+}
+.about-company {
+  float: left;
+  width: 540px;
+  /* Только для оформления сетки */
+  min-height: 524px;
+}
+.company-title,
+.contacs-title {
+  margin-top: 80px;
+  margin-bottom: 38px;
+}
+.about-company p:first-child,
+.about-contacs p:first-child{
+  margin-bottom: 36px;
+}
+.about-company p:last-child {
+  margin-bottom: 26px;
+}
+.company-contacts {
+  margin-bottom: 36px;
+}
+.company-info {
+  width: 220px;
+  height: 38px;
+  /*margin-bottom: 86px;*/
+}
+.about-contacs {
+  float: right;
+  width: 300px;
+  /* Только для оформления сетки */
+  min-height: 524px;
+}
+.about-contacs img {
+  width: 300px;
+  height: 158px;
+}
+.contacs-info {
+  width: 300px;
+  height: 38px;
+  /*margin-bottom: 40px;*/
+}
+.main-footer {
+  min-width: 940px;
+  /* Только для оформления сетки */
+  min-height: 300px;
+}
+.footer-up {
+  height: 193px;
+  /* Только для оформления сетки */
+  /*min-height: 193px;*/
+}
+.footer-left {
+  float: left;
+  min-width: 350px;
+  /* Только для оформления сетки */
+  min-height: 144px;
+}
+.footer-left-logo {
+  min-width: 220px;
+  margin-bottom: : 30px;
+  /*float: left;*/
+  /* Только для оформления сетки */
+  min-height: 42px;
+}
+.footer-left-adrees {
+  width: 380px;
+  /* Только для оформления сетки */
+  min-height: 45px;
+}
+.footer-right {
+  float: right;
+  min-width: 550px;
+  /* Только для оформления сетки */
+  min-height: 193px;
+}
+.footer-bottom {
+  height: 107px;
+  /* Только для оформления сетки */
+  /*min-height: 107px;*/
+}
+.footer-license {
+  min-width: 240px;
+  float: left;
+  margin-right: 140px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+.footer-social {
+  min-width: 170px;
+  float: left;
+  margin-right: 70px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+.footer-feedback {
+  min-width: 140px;
+  float: left;
+  margin-right: 40px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+.footer-copyright {
+  min-width: 115px;
+  float: right;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+/* сетка index.html end */
+/*============================*/
+
+/* сетка catalog.html begin */
+/*============================*/
+.breadcrumbs {
+  /* Только для оформления сетки */
+  min-height: 59px;
+}
+.page-logo {
+  /*float: left;*/
+  width: 460px;
+  height: 88px;
+}
+.filters {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 550px;
+}
+.filter-logo {
+  /*min-width: 140px;*/
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: red;
+  /*height: 38px;*/
+  background-color: #f7f3ec;
+}
+.filter-price {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.filter-price-logo,
+.filter-maker-title,
+.filter-power-title {
+  /*padding-top: 17px;*/
+  padding-bottom: 18px;
+  font-size: 17px;
+  line-height: 30px;
+  background-color: #f7f3ec;
+  color: red;
+}
+.filter-price .range-filter {
+  min-height: 80px;
+}
+.filter-maker {
+  padding-top: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  /* Только для оформления сетки */
+  min-height: 218px;
+}
+.filter-power {
+  padding-top: 22px;
+  padding-bottom: 74px;
+}
+.btn {
+  width: 138px;
+  height: 36px;
+  border: 1px solid #e5e5e5;
+}
+.sorting {
+  float: right;
+  width: 700px;
+  margin-bottom: 52px;
+  /* Только для оформления сетки */
+  min-height: 250px;
+}
+.sort {
+  margin-bottom: 20px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+.sort-logo {
+  width: 220px;
+  margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+.sort-filter {
+  width: 380px;
+  margin-right: 20px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+.sort-top-bottom {
+  width: 60px;
+  /* Только для оформления сетки */
+  min-height: 38px;
+}
+
+.catalog-items .item:nth-child(1),
+.catalog-items .item:nth-child(2),
+.catalog-items .item:nth-child(4),
+.catalog-items .item:nth-child(5),
+.catalog-items .item:nth-child(7),
+.catalog-items .item:nth-child(8) {
+  float: left;
+  width: 218px;
+  min-height: 316px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+}
+.catalog-items .item:nth-child(3),
+.catalog-items .item:nth-child(6),
+.catalog-items .item:nth-child(9) {
+  float: right;
+  width: 218px;
+  min-height: 316px;
+  margin-right: 0;
+  border: 1px solid #e5e5e5;
+}
+.catalog-items .item:nth-child(7),
+.catalog-items .item:nth-child(8),
+.catalog-items .item:nth-child(9) {
+  margin-bottom: 0;
+}
+.pages {
+  display: inline-block;
+  clear: both;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*width: 195px;*/
+  /*height: 43px;*/
+  margin-left: 240px;
+  margin-bottom: 25px;
+}
+.pages li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.pages li a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  /*padding: 14px 0;*/
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  line-height: 38px;
+  font-size: 13px;
+  text-decoration: none;
+  /*box-sizing: border-box;*/
+}
+.pages li a:first-child {
+  /*background-color: #ee3643;*/
+  /*color: white;*/
+}
+.pages li a:last-child {
+  /*width: 138px;*/
+  margin-right: 0;
+}
+.info-item {
+  padding-top: 62px;
+  /* Только для оформления сетки */
+  min-height: 261px;
+}
+.info-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.info-discription {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* сетка catalog.html end */
+/*============================*/
