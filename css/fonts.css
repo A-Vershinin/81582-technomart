@@ -1,0 +1,124 @@
+
+/*font-family: "PTSans"*/
+@font-face {
+  font-family: "pt_sansbold_italic";
+  src: url("../fonts/PTSans/pts76f-webfont.eot");
+  src: url("../fonts/PTSans/pts76f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/pts76f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/pts76f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/pts76f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sansbold";
+  src: url("../fonts/PTSans/pts75f-webfont.eot");
+  src: url("../fonts/PTSans/pts75f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/pts75f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/pts75f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/pts75f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sansitalic";
+  src: url("../fonts/PTSans/pts56f-webfont.eot");
+  src: url("../fonts/PTSans/pts56f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/pts56f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/pts56f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/pts56f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sansregular";
+  src: url("../fonts/PTSans/pts55f-webfont.eot");
+  src: url("../fonts/PTSans/pts55f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/pts55f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/pts55f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/pts55f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sans_narrowbold";
+  src: url("../fonts/PTSans/ptn77f-webfont.eot");
+  src: url("../fonts/PTSans/ptn77f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/ptn77f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/ptn77f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/ptn77f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sans_narrowregular";
+  src: url("../fonts/PTSans/ptn57f-webfont.eot");
+  src: url("../fonts/PTSans/ptn57f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/ptn57f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/ptn57f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/ptn57f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sans_captionbold";
+  src: url("../fonts/PTSans/ptc75f-webfont.eot");
+  src: url("../fonts/PTSans/ptc75f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/ptc75f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/ptc75f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/ptc75f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pt_sans_captionregular";
+  src: url("../fonts/PTSans/ptc55f-webfont.eot");
+  src: url("../fonts/PTSans/ptc55f-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/ptc55f-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/ptc55f-webfont.woff") format("woff"),
+      url("../fonts/PTSans/ptc55f-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*font-family: "Cuprum"*/
+@font-face {
+  font-family: "cuprumbold";
+  src: url("../fonts/PTSans/cuprum-bold-webfont.eot");
+  src: url("../fonts/PTSans/cuprum-bold-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/cuprum-bold-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/cuprum-bold-webfont.woff") format("woff"),
+      url("../fonts/PTSans/cuprum-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cuprumbold_italic";
+  src: url("../fonts/PTSans/cuprum-bolditalic-webfont.eot");
+  src: url("../fonts/PTSans/cuprum-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/cuprum-bolditalic-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/cuprum-bolditalic-webfont.woff") format("woff"),
+      url("../fonts/PTSans/cuprum-bolditalic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cuprumitalic";
+  src: url("../fonts/PTSans/cuprum-italic-webfont.eot");
+  src: url("../fonts/PTSans/cuprum-italic-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/cuprum-italic-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/cuprum-italic-webfont.woff") format("woff"),
+      url("../fonts/PTSans/cuprum-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cuprumregular";
+  src: url("../fonts/PTSans/cuprum-regular-webfont.eot");
+  src: url("../fonts/PTSans/cuprum-regular-webfont.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/PTSans/cuprum-regular-webfont.woff2") format("woff2"),
+      url("../fonts/PTSans/cuprum-regular-webfont.woff") format("woff"),
+      url("../fonts/PTSans/cuprum-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

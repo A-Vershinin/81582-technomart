@@ -18,8 +18,9 @@
               <span>Техномарт</span>
             </a>
             <form action="#" method="post" class="header-seach">
-              <label for="search-field">Поиск:</label>
-              <input type="search" name="search" id="search-field">
+              <label for="search-field">
+                <input type="search" name="search" id="search-field" placeholder="Поиск:">
+              </label>
             </form>
             <div class="header-statistics clearfix">
               <a href="#" class="statistic-bookmartes">Закладки: <span>0</span></a>
@@ -91,7 +92,7 @@
             <div class="group group-materials">
               <a href="#">
                 <h3>Материалы</h3>
-                <p>На любой вкус<p>
+                <p>На любой вкус</p>
               </a>
             </div>
             <div class="group group-tool">
@@ -166,20 +167,28 @@
             <h2 class="popular-title"> Популярные товары:</h2>
             <a href="#">Все популярные товары</a>
           </header>
-          <div class="popular-items clearfix">
+          <div class="popular-item clearfix">
             <article class="item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="image">
-                <img width="184" height="164" src="img/popular-item-1.jpg" alt="фото товара #1">
+                <img width="144" height="128" src="img/popular-item-1.jpg" alt="Перфоратор BOSCH BGF 9000">
               </div>
               <div class="title">
                 <a href="#">Перфоратор BOSCH BGF 9000</a>
               </div>
-              <div class="price price-old">12500 Р.</div>
-              <!-- <div class="price price-new">25500 Р.</div> -->
+              <div class="price price-old">32500 Р.</div>
+              <div class="price price-new">25500 Р.</div>
             </article>
             <article class="item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="image">
-                <img width="127" height="112" src="img/popular-item-2.jpg" alt="фото товара #2">
+                <img width="144" height="128" src="img/popular-item-2.jpg" alt="Перфоратор BOSCH BGF 3000">
               </div>
               <div class="title">
                 <a href="#">Перфоратор BOSCH BGF 3000</a>
@@ -188,8 +197,12 @@
               <div class="price price-new">15500 Р.</div>
             </article>
             <article class="item">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="image">
-                <img width="144" height="128" src="img/popular-item-3.jpg" alt="фото товара #3">
+                <img width="144" height="128" src="img/popular-item-3.jpg" alt="Перфоратор BOSCH BGF 6000">
               </div>
               <div class="title">
                 <a href="#">Перфоратор BOSCH BGF 6000</a>
@@ -197,14 +210,18 @@
               <div class="price price-old">30500 Р.</div>
               <div class="price price-new">25500 Р.</div>
             </article>
-            <article class="item item-new">
+            <article class="item new">
+              <div class="actions">
+                <a href="#" class="buy">Купить</a>
+                <a href="#" class="bookmark">В закладки</a>
+              </div>
               <div class="image">
-                <img width="127" height="112" src="img/popular-item-4.jpg" alt="фото товара #4">
+                <img width="144" height="128" src="img/popular-item-2.jpg" alt="Перфоратор BOSCH BGF 2000">
               </div>
               <div class="title">
                 <a href="#">Перфоратор BOSCH BGF 2000</a>
               </div>
-              <div class="price price-old">12500 Р.</div>
+              <div class="price price-new">12500 Р.</div>
             </article>
           </div>
         </section>
@@ -219,7 +236,6 @@
             <div class="manufacturers-row">
               <div class="manufacturer">
                 <img width="126" height="37" src="img/bosch.jpg" alt="производитель #1">
-                <!-- <span>loremsdfsdfsdfsdfsdf</span> -->
               </div>
               <!-- width="126" height="37" -->
               <div class="manufacturer">
@@ -313,14 +329,14 @@
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
                 строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
               </p>
-             <p>Мы можем доставить ваш товар в самые отдалённые точки России!<br>
+            <p>Мы можем доставить ваш товар в самые отдалённые точки России!<br>
                 Техномарт работает со многими транспортными компаниями:</p>
-              <ul class="company-contacts">
-                <li>Деловые линии</li>
-                <li>Автотрейдинг</li>
-                <li>ЖелДорЭкспидиция</li>
-              </ul>
-              <a href="#" class="company-info">Подробнее о компонии</a>
+            <ul class="company-contacts">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспидиция</li>
+            </ul>
+            <a href="#" class="company-info">Подробнее о компонии</a>
           </div>
           <div class="about-contacs">
             <h2 class="contacs-title">Контакты</h2>
@@ -336,8 +352,8 @@
     <!-- end-container -->
 
     <footer class="main-footer">
-      <div class="container clearfix">
-        <div class="footer-up clearfix">
+      <div class="footer-up clearfix">
+        <div class="container clearfix">
           <section class="footer-left">
             <div class="footer-left-logo">
               <a href="#">Техномарт</a>
@@ -363,26 +379,25 @@
             </div>
           </section>
         </div>
-        <div class="footer-bottom clearfix">
+      <div class="footer-bottom clearfix">
+        <div class="container clearfix">
           <section class="footer-license">
             &copy;2010-2016 Компания "Техномарт"<br>
             Все права защищены
           </section>
           <section class="footer-social">
-            <ul>
-              <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-              <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-              <li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
-            </ul>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
           <section class="footer-feedback">
             <p>Обратная связь:<br>
-              <a class="btn" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="feedback-btn" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
           </section>
           <section class="footer-copyright">
             <p>Разработано -<br>
-              <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="copyright-btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
             </p>
           </section>
         </div>
