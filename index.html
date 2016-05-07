@@ -5,7 +5,6 @@
     <title>Техномарт - главная</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=cyrillic' rel='stylesheet' type='text/css'>
-    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -18,9 +17,11 @@
               <span>Техномарт</span>
             </a>
             <form action="#" method="post" class="header-seach">
-              <label for="search-field">
+              <div class="search-field">
+
                 <input type="search" name="search" id="search-field" placeholder="Поиск:">
-              </label>
+                <label for="search-field"></label>
+              </div>
             </form>
             <div class="header-statistics clearfix">
               <a href="#" class="statistic-bookmartes">Закладки: <span>0</span></a>
@@ -41,7 +42,7 @@
             </h1>
             <section class="header-contacts">
               <a href="tel:78126660266" class="header-tel">+7 (812) 666-02-66</a><br>
-              <a class="header-adress">г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+              <a class="header-adress">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</a>
             </section>
             <div class="user-block">
               <a class="login" href="#">Войти</a>
@@ -79,7 +80,6 @@
             </nav>
           </div>
         </div>
-      <!-- </div> -->
     </header>
     <!-- end-container -->
 
@@ -111,39 +111,33 @@
           <div class="groups-bottom clearfix">
             <!-- Слайдер -->
             <div class="group-slider">
-               <!-- кнопками переключения слайдов  -->
-              <!-- <input type="radio" id="btn-1" name="toggle" checked>
-              <input type="radio" id="btn-2" name="toggle">
-              <div class="slider-controls"></div>
-                <label for="btn-1"></label>
-                <label for="btn-2"></label> -->
-              <!-- картинки в слайдере -->
-              <div class="slider-slides">
-                <!-- стрелочка переключения влево слайдера -->
-                <!-- <a href="#" class="slider-next">Назад</a> -->
-                <!-- слайд #1 -->
-                <div class="slide">
-                  <div class="slide-discription">
-                    <!-- <h3 class="title">Перфораторы</h3> -->
-                    <!-- <p class="discription">Настоящие мужские игрушки</p> -->
+              <div class="slider">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <div class="slider-arrows">
+                  <label for="btn-1" class="slider-arrow prev"></label>
+                  <label for="btn-2" class="slider-arrow next"></label>
+                </div>
+                <div class="slider-controls">
+                  <label for="btn-1"></label>
+                  <label for="btn-2"></label>
+                </div>
+                <div class="slides">
+                  <div class="slide">
+                    <div class="slide-text">
+                      <div class="slide-title">Перфораторы</div>
+                      <p>Настоящие мужские игрушки</p>
+                      <a class="btn" href="#">Открыть каталог</a>
+                    </div>
                   </div>
-                  <div class="slade-image">
-                    <!-- <img src="img/photo-1-small.jpg" width="620" height="266" alt="картинка слайдера №1"> -->
+                  <div class="slide">
+                    <div class="slide-text">
+                      <div class="slide-title">Дрели</div>
+                      <p>Соседям на радость!</p>
+                      <a class="btn" href="#">Открыть каталог</a>
+                    </div>
                   </div>
                 </div>
-                <!-- слайд #2 -->
-                <div class="slide">
-                  <div class="slide-discription">
-                    <!-- <h3 class="title">Дрели</h3> -->
-                    <!-- <p class="discription">Соседям на радость!</p> -->
-                  </div>
-                  <div class="slade-image">
-                    <!-- <img src="img/photo-2-small.jpg" width="620" height="266" alt="картинка слайдера №2"> -->
-                  </div>
-                </div>
-                  <!-- стрелочка переключения вправо слайдера -->
-                <!-- <a href="#" class="slider-next">Вперед</a> -->
-                <a href="#">Открыть каталог</a>
               </div>
             </div>
             <div class="group group-discounts">
@@ -237,7 +231,6 @@
               <div class="manufacturer">
                 <img width="126" height="37" src="img/bosch.jpg" alt="производитель #1">
               </div>
-              <!-- width="126" height="37" -->
               <div class="manufacturer">
                   <img width="123" height="40" src="img/makita.jpg" alt="производитель #2">
               </div>
@@ -269,56 +262,49 @@
         <section class="services">
           <div class="services-header">
             <h2 class="services-header-title">
-              <!-- Сервисы -->
+              Сервисы
             </h2>
             <p>
-              <!-- Хороший интернет-магазин отличается от плохого не только ценами<br>
-               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными. -->
+              Хороший интернет-магазин отличается от плохого не только ценами!<br>
+               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
              </p>
           </div>
           <!-- сервисы сделаны через табы -->
-          <div class="services-tabs">
-            <dl class="tabs">
-              <!-- первый таб -->
-              <!-- <dt class="tab-selected">Доставка</dt> -->
-              <dd class="tab-selected">
-                <div class="tab-content">
-                  <!-- <h3>Доставка</h3>
-                  <p>Мы с удовольствием доставим ваш товар прямо<br>
-                     к вашему подъезду совершенно бесплатно!<br>
-                     Ведь мы неплохо заработаем,<br>
-                     поднимая его на ваш на этаж!
-                  </p> -->
-                  <!-- <img src="img/delivery.png" width="468" height="261" alt="фото доставка"> -->
-                </div>
-              </dd>
-              <!-- второй таб -->
-              <!-- <dt >Гарантия</dt>
-              <dd>
-                <div class="tab-content">
-                  <h3>Гарантия</h3>
-                  <p>Если купленный у нас товар поломается или заискрит,<br>
-                    а также в случае пожара, спровоцированного его возгаранием,<br>
-                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                    сгоревший товар на новый.<br>
-                    Дом уж восстановите как-нибудь сами.
-                  </p>
-                  <img src="img/guarantee.png" width="389" height="283" alt="фото гарантия">
-                </div>
-              </dd> -->
-              <!-- третий таб -->
-              <!-- <dt>Кредит</dt>
-              <dd>
-                <div class="tab-content">
-                  <h3>Гарантия</h3>
-                  <p>Залезть в долговую яму стало проще!<br>
-                    Кредитные консультанты придут вам на помощь.
-                  </p>
-                  <a href="#">Отправить заявку</a>
-                  <img src="img/credit.png" width="465" height="285" alt="фото кредит">
-                </div>
-              </dd> -->
-            </dl>
+          <div class="tabs-wrapper">
+            <input type="radio" name="tabs" id="btn-3" checked>
+            <input type="radio" name="tabs" id="btn-4">
+            <input type="radio" name="tabs" id="btn-5">
+            <div class="tabs-controls">
+              <label for="btn-3">Доставка</label>
+              <label for="btn-4">Гарантия</label>
+              <label for="btn-5">Кредит</label>
+            </div>
+            <div class="tabs-content">
+              <div class="tab tab-3">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>
+                   к вашему подъезду совершенно бесплатно!<br>
+                   Ведь мы неплохо заработаем,<br>
+                   поднимая его на ваш на этаж!
+                </p>
+              </div>
+              <div class="tab tab-4">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгаранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </div>
+              <div class="tab tab-5">
+                <h3>Гарантия</h3>
+                <p>Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a  class="btn" href="#">Отправить заявку</a>
+              </div>
+            </div>
           </div>
             <!-- конец -->
         </section>
@@ -402,6 +388,7 @@
           </section>
         </div>
       </div>
+    </div>
     </footer>
   </body>
 </html>
