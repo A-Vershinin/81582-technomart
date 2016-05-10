@@ -257,58 +257,60 @@
             </div>
           </div>
         </section>
-
-          <!-- контейнер с сервисами переписать -->
+      </div>
         <section class="services">
-          <div class="services-header">
-            <h2 class="services-header-title">
-              Сервисы
-            </h2>
-            <p>
-              Хороший интернет-магазин отличается от плохого не только ценами!<br>
-               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-             </p>
-          </div>
-          <!-- сервисы сделаны через табы -->
-          <div class="tabs-wrapper">
-            <input type="radio" name="tabs" id="btn-3" checked>
-            <input type="radio" name="tabs" id="btn-4">
-            <input type="radio" name="tabs" id="btn-5">
-            <div class="tabs-controls">
-              <label for="btn-3">Доставка</label>
-              <label for="btn-4">Гарантия</label>
-              <label for="btn-5">Кредит</label>
+          <div class="container">
+            <div class="services-header">
+              <h2 class="services-header-title">
+                Сервисы
+              </h2>
+              <p>
+                Хороший интернет-магазин отличается от плохого не только ценами!<br>
+                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+               </p>
             </div>
-            <div class="tabs-content">
-              <div class="tab tab-3">
-                <h3>Доставка</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо<br>
-                   к вашему подъезду совершенно бесплатно!<br>
-                   Ведь мы неплохо заработаем,<br>
-                   поднимая его на ваш на этаж!
-                </p>
+            <!-- сервисы сделаны через табы -->
+            <div class="tabs-wrapper">
+              <input type="radio" name="tabs" id="btn-3" checked>
+              <input type="radio" name="tabs" id="btn-4">
+              <input type="radio" name="tabs" id="btn-5">
+              <div class="tabs-controls">
+                <label for="btn-3">Доставка</label>
+                <label for="btn-4">Гарантия</label>
+                <label for="btn-5">Кредит</label>
               </div>
-              <div class="tab tab-4">
-                <h3>Гарантия</h3>
-                <p>Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара, спровоцированного его возгаранием,<br>
-                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-                  сгоревший товар на новый.<br>
-                  Дом уж восстановите как-нибудь сами.
-                </p>
-              </div>
-              <div class="tab tab-5">
-                <h3>Гарантия</h3>
-                <p>Залезть в долговую яму стало проще!<br>
-                  Кредитные консультанты придут вам на помощь.
-                </p>
-                <a  class="btn" href="#">Отправить заявку</a>
+              <div class="tabs-content">
+                <div class="tab tab-3">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо<br>
+                     к вашему подъезду совершенно бесплатно!<br>
+                     Ведь мы неплохо заработаем,<br>
+                     поднимая его на ваш на этаж!
+                  </p>
+                </div>
+                <div class="tab tab-4">
+                  <h3>Гарантия</h3>
+                  <p>Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием,<br>
+                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                    сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                </div>
+                <div class="tab tab-5">
+                  <h3>Гарантия</h3>
+                  <p>Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <a  class="btn" href="#">Отправить заявку</a>
+                </div>
               </div>
             </div>
           </div>
-            <!-- конец -->
+        <!-- конец -->
         </section>
         <!-- контейнер о компании -->
+      <div class="container ">
         <section class="about clearfix">
           <div class="about-company">
             <h2 class="company-title">Компания "Техномарт"</h2>
@@ -390,5 +392,42 @@
       </div>
     </div>
     </footer>
+
+    <div class="modal-content-index">
+      <button class="modal-content-close" type="button"
+        title="Закрыть">Закрыть</button>
+
+      <form class="mail-form" action="#" method="post">
+        <div class="mail-form-wrapper">
+          <div class="modal-page-login">
+            <label for="name-field">Ваше имя:</label>
+            <input class="user-name" type="text" name="name" id="name-field"
+              placeholder="Представтесь, пожалуйста" required>
+          </div>
+          <div class="modal-page-mail">
+            <label for="email-field">Ваш e-mail:</label>
+            <input class="user-e-mail" type="email"  name="email" for="email-field"
+              placeholder="Для отправки ответа" required>
+          </div>
+          <div class="modal-page-text">
+            <label for="review-field">Текст письма:</label>
+            <textarea class="review" name="review" id="review-field"
+              placeholder="В свободной форме" required>
+            </textarea>
+          </div>
+        </div>
+      <!-- </form> -->
+      <div class="form-row">
+        <button class="btn" type="submit">Отправить
+        </button>
+      </div>
+      </form>
+    </div>
+
+
+
+
+
+
   </body>
 </html>
