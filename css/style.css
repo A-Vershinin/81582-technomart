@@ -79,16 +79,19 @@ body {
   background-position: -10px -539px;
   opacity: 0.3;
 }
-.header-seach label:hover::before {
-  opacity: 1;
-}
 .header-seach input:active ~ label {
   opacity: 0.3;
 }
 .header-seach input:focus ~ label {
-  opacity: 1;
   background: url("../img/sprites.png") no-repeat;
   background-position: -10px -577px;
+  opacity: 1;
+}
+.header-seach input:hover {
+  background-color: #212a3a;
+}
+.header-seach input:hover ~ label{
+  opacity: 1;
 }
 .header-seach input:focus {
   background-color: #fff;
@@ -104,7 +107,7 @@ body {
   padding-left: 48px;
   line-height: 42px;
   color: #fff;
-  background: #293449;
+  background-color: #293449;
 }
 .header-seach label:hover input {
   background: #212a3a;
@@ -116,13 +119,13 @@ body {
 .header-seach input[type="search"]::-webkit-input-placeholder {
   color: #fff;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 42px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 .header-seach input[type="search"]::-moz-placeholder {
   color: #fff;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 42px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
@@ -131,7 +134,7 @@ body {
 .header-seach input[type="search"]:-moz-placeholder {
   color: #fff;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 42px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
@@ -140,7 +143,7 @@ body {
 .header-seach input[type="search"]:-ms-input-placeholder {
   color: #fff;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 42px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 .header-statistics {
@@ -160,7 +163,10 @@ body {
   text-align: center;
   text-decoration: none;
 }
-.header-seach label:hover, .statistic-bookmartes:hover, .statistic-basket:hover, .statistic-order:hover {
+.header-seach label:hover,
+.statistic-bookmartes:hover,
+.statistic-basket:hover,
+.statistic-order:hover {
   color: #fff;
   background-color: #212a3a;
 }
@@ -175,11 +181,13 @@ body {
   background-position: -11px -46px;
   opacity: 0.3;
 }
-.statistic-bookmartes:hover::before, .statistic-basket:hover::before {
+.statistic-bookmartes:hover::before,
+.statistic-basket:hover::before {
   opacity: 1;
 }
 .statistic-bookmartes:active, .statistic-basket:active {
   background-color: #161d29;
+  opacity: 0.6;
 }
 .statistic-basket {
   position: relative;
@@ -222,6 +230,7 @@ body {
 }
 .statistic-order:active {
   background-color: #518534;
+  opacity: 0.51;
 }
 .middle-line {
   padding-top: 46px;
@@ -306,12 +315,12 @@ body {
 .login:before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 17px;
   left: 15px;
   width: 18px;
   height: 18px;
   background: transparent url("../img/sprites.png") no-repeat;
-  background-position: -12px -430px;
+  background-position: -12px -395px;
   opacity: 0.3;
 }
 .login:hover {
@@ -320,9 +329,12 @@ body {
 .login:hover::before {
   color: #32425c;
   opacity: 1;
+  background:  url("../img/.icon-login-bg.png") no-repeat;
+  background-position: -2px 0;
 }
 .login:active {
   opacity: 0.3;
+  color: #000;
 }
 .registration {
   display: inline-block;
@@ -340,7 +352,9 @@ body {
   color: #ee3643;
 }
 .registration:active {
+  color: #000;
   opacity: 0.3;
+
 }
 .bottom-line {
   padding-bottom: 40px;
@@ -373,6 +387,9 @@ body {
 }
 .main-navigation a:hover {
   background: #293449;
+}
+.main-navigation a:active {
+  background: #1d2739;
 }
 .clearfix::after {
   content: "";
@@ -888,6 +905,14 @@ body {
   background: #ee3643;
   border-radius: 3px;
 }
+.popular-header a:hover,
+.manufacturers-header a:hover {
+  background-color: #ca2c37;
+}
+.popular-header a:active,
+.manufacturers-header a:active  {
+  background-color: #ba2732;
+}
 .manufacturers-row {
   margin-bottom: 20px;
   font-size: 0;
@@ -1038,6 +1063,12 @@ body {
   border: 0;
   border-radius: 3px;
 }
+.tab .btn:hover {
+  background-color: #ca2c37;
+}
+.tab .btn:active {
+  background-color: #ba2732;
+}
 .tab-3 {
   background: #f2f6f8 url('../img/delivery.png') 150px 0 no-repeat;
 }
@@ -1140,6 +1171,15 @@ body {
   background: #ee3643;
   border-radius: 3px;
 }
+
+.company-info:hover,
+.contacs-info:hover {
+  background-color: #ca2c37;
+}
+.company-info:active,
+.contacs-info:active {
+  background-color: #ba2732;
+}
 .about-contacs {
   float: right;
   max-width: 300px;
@@ -1165,6 +1205,7 @@ body {
   background: #ee3643;
   border-radius: 3px;
 }
+
 .main-footer {
   min-width: 940px;
   color: #fff;
@@ -1387,6 +1428,7 @@ body {
   opacity: 1;
 }
 .statistic-bookmartes:active, .statistic-basket:active {
+
   background-color: #161d29;
 }
 .statistic-basket-catalog {
@@ -1473,7 +1515,7 @@ body {
   left: 15px;
   width: 20px;
   height: 18px;
-  background: url("../img/sprites.png") no-repeat, ;
+  background: url("../img/sprites.png") no-repeat;
   background-position: -10px -644px;
 }
 .user-out {
@@ -2516,6 +2558,9 @@ body {
 }
 .btn-order:hover {
   background-color: #b22832;
+}
+.btn-continue:hover {
+  background-color: #a9a7a7;
 }
 .modal-content-map {
   display: none;
