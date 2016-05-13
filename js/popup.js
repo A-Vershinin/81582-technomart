@@ -21,22 +21,22 @@
     // console.log(emailUser);
 
     //дёргается попап из-за стореджа
-    if (storageName) {
-      nameUser.value = storageName;
-      emailUser.focus();
-    } else {
-      nameUser.focus()
-    }
-    if (storageEmail) {
-      emailUser.value = storageEmail;
-      if (storageName) {
-          reviewUser.focus();
-      } else {
-        nameUser.focus();
-      }
-    } else {
-      emailUser.focus()
-    }
+    // if (storageName) {
+    //   nameUser.value = storageName;
+    //   emailUser.focus();
+    // } else {
+    //   nameUser.focus()
+    // }
+    // if (storageEmail) {
+    //   emailUser.value = storageEmail;
+    //   if (storageName) {
+    //       reviewUser.focus();
+    //   } else {
+    //     nameUser.focus();
+    //   }
+    // } else {
+    //   emailUser.focus()
+    // }
   });
     closeBuy.addEventListener("click", function(event) {
        event.preventDefault();
