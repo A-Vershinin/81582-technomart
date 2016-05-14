@@ -326,15 +326,19 @@ body {
 .login:hover {
   color: #ee3643;
 }
+.login:active {
+  opacity: 1;
+  color: #cacaca;
+  background-color: #fff;
+}
 .login:hover::before {
   color: #32425c;
   opacity: 1;
   background:  url("../img/.icon-login-bg.png") no-repeat;
   background-position: -2px 0;
 }
-.login:active {
+.login:active:before {
   opacity: 0.3;
-  color: #000;
 }
 .registration {
   display: inline-block;
@@ -352,9 +356,9 @@ body {
   color: #ee3643;
 }
 .registration:active {
-  color: #000;
-  opacity: 0.3;
-
+  opacity: 1;
+  color: #cacaca;
+  background-color: #fff;
 }
 .bottom-line {
   padding-bottom: 40px;
@@ -709,8 +713,8 @@ body {
   font-size: 0;
 }
 .popular-title {
-  font-size: 30;
-  line-height: 30;
+  font-size: 30px;
+  line-height: 30px;
 }
 .item {
   position: relative;
@@ -1789,7 +1793,7 @@ body {
   padding-left: 35px;
   padding-bottom: 23px;
   line-height: 20px;
-  font-size: 15;
+  font-size: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
@@ -1826,7 +1830,7 @@ body {
   padding-left: 35px;
   padding-bottom: 23px;
   line-height: 20px;
-  font-size: 15;
+  font-size: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
