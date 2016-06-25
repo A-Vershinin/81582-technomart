@@ -15,6 +15,7 @@
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
+    console.log("нажал на кнопку Заблудились...");
     popup.classList.add("modal-content-index-show");
     // console.log(storageName);
     // console.log(storageEmail);
@@ -38,18 +39,18 @@
     //   emailUser.focus()
     // }
   });
-    closeBuy.addEventListener("click", function(event) {
-       event.preventDefault();
-       popupBuy.classList.remove("modal-content-catalog-show");
-     });
 
-     close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-index-show");
-        popup.classList.remove("modal-error");
-      });
+  closeBuy.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupBuy.classList.remove("modal-content-catalog-show");
+  });
 
-
+  close.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("modal-content-index-show");
+    popup.classList.remove("modal-error");
+  });
+  
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
       if (popup.classList.contains("modal-content-index-show")) {
